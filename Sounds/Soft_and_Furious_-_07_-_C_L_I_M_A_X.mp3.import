@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Soft_and_Furious_-_07_-_C_L_I_M_A_X.mp3-4c2c97dd355ec6695925f226b89e3710.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Soft_and_Furious_-_07_-_C_L_I_M_A_X.mp3"
+dest_files=[ "res://.import/Soft_and_Furious_-_07_-_C_L_I_M_A_X.mp3-4c2c97dd355ec6695925f226b89e3710.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

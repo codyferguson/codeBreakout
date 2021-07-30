@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/retro_ui_menu_blip_click_01.wav-c16ba5029496cf3add0ef0b6e3fc9f3c.sample"
+
+[deps]
+
+source_file="res://Sounds/retro_ui_menu_blip_click_01.wav"
+dest_files=[ "res://.import/retro_ui_menu_blip_click_01.wav-c16ba5029496cf3add0ef0b6e3fc9f3c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="Wall" type="RigidBody2D"]
+mode = 1
+gravity_scale = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0.12603, 0.140308 )
+polygon = PoolVector2Array( -128.575, 640.934, -130.834, -126.826, 1121.53, -129.345, 1122.13, 642.098, 960.211, 639.716, 960.125, 0.125, -0.335663, -0.295662, -2.71725, 640.934 )
