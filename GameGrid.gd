@@ -2,8 +2,6 @@ extends Node2D
 
 const brickNode = preload("res://Brick.tscn")
 const dataNode = preload("res://Data.tscn")
-var file = File.new()
-var levelData = {}
 export var width = 850
 export var length = 250
 var rowTotal
@@ -16,10 +14,6 @@ func _ready():
 	rowTotal = length / brick1.get_Brick_Height()
 	brick1.queue_free()
 	
-	file.open("res://data/levelData.json", file.READ)
-	levelData = parse_json(file.get_as_text())
-	file.close()
-	
 func get_Data_Count():
 	return dataCount
 	
@@ -29,14 +23,16 @@ func clear_grid():
 
 func load_level(level):
 	print("level: ", level)
-	var bricksData = levelData["levels"][level-1]["bricks"]
+	#var bricksData = levelData["levels"][level-1]["bricks"]
+	var levelStuff = LevelData.get_level_data(level)
+	var bricksData = levelStuff["bricks"]
 	# Add bricks from json data into scene
 	load_bricks(bricksData)
 		
 	
 	dataCount = 0
 	# Add data objects from json data into scene
-	var datas = levelData["levels"][level-1]["data"]
+	var datas = levelStuff["data"]
 	for data in datas:
 		dataCount = dataCount + 1
 		var dataObject = dataNode.instance()

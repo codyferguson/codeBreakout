@@ -18,6 +18,10 @@ config/name="CodeBreakout"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+LevelData="*res://data/LevelData.gd"
+
 [display]
 
 window/size/width=960

@@ -55,10 +55,12 @@ func process_level():
 		paddle.reset_ball_amount()
 		init_values()
 		reset_hud_values()
+		$Typing.play()
 		hud.level_transition_sequence("end")
 		yield(get_tree().create_timer(.5), "timeout")
 		bricks.clear_grid()
 		yield(get_tree().create_timer(1), "timeout")
+		$FinishTyping.play()
 		hud.level_transition_sequence("start")
 		yield(get_tree().create_timer(1.2), "timeout")
 		bricks.load_level(level)
@@ -117,3 +119,5 @@ func game_over():
 	hud.display_text("")
 	hud.show_startScreen()
 	init_values()
+	hud.set_level_data(downloadPercent * 100)
+	level = 1
